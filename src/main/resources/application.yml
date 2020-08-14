@@ -1,0 +1,13 @@
+spring:
+  master:
+    datasource:
+      driver:
+      username:
+      password:
+      url:
+  stanby:
+    datasource:
+      driver:
+      username:
+      password:
+      url:
