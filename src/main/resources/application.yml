@@ -1,13 +1,9 @@
 spring:
-  master:
-    datasource:
-      driver:
-      username:
-      password:
-      url:
-  stanby:
-    datasource:
-      driver:
-      username:
-      password:
-      url:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:tcp://localhost/~/test
+    username: sa
+    password:

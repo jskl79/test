@@ -5,6 +5,7 @@ import com.solo.test.domain.Client;
 import com.solo.test.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
+import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -13,6 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Component
 public class RoutingDataSourceImpl extends AbstractRoutingDataSource {
 
     @Autowired
